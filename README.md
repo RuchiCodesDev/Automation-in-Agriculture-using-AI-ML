@@ -110,6 +110,7 @@ going to implement a machine learning model that performs worse than human-level
 
 
 🎯2.3 Problem Statement and Objective
+
 In the future, AI will help farmers evolve into agricultural technologists, using data to optimize
 yields down to individual rows of plants. AI & ML companies are developing algorithms that can
 easily perform multiple tasks in farming fields. This type of algorithms is trained to control diseases
@@ -120,17 +121,23 @@ force labor. AI-enabled system to detect pests: Pests are one of the worst enemi
 which damages crops.
 The Motive of project is to detect and determine the nature and quality of soil based in a particular
 area, considering the toxicity level at present instance of time and predict its future value using AI
-model. The Main objectives of the Project are:-
+model. 
+The Main objectives of the Project are:-
+
  We have a limited amount of resources and their proper utilization is a subject of great concern,
 whether it’s the utilization of Resources done properly indirectly affects our lives.
+
  Moreover, there is a lack of research data in this field, this would produce a huge collection of
 data for the farmers. Data, tons of data, collected by smart agriculture sensors, e.g. weather
 conditions, soil quality, and crop’s growth progress. This data can be used to track the state of
 your business in general as well as staff performance, equipment efficiency, etc.
+
  Better control over the internal processes and, as a result, lower production risks. The ability
 to foresee the output of your production allows you to plan for better product distribution.
+
  Being able to see any anomalies in the crop growth you will be able to mitigate the risks of
 losing your yield.
+
  Increased business efficiency through process automation. By using our App, you can
 automate multiple processes across your production cycle, e.g. which Crop is Suitable to grow,
 fertilizing, or Diseases control
@@ -168,6 +175,7 @@ early detection of pest’s infestation and allow farmers to act quickly and min
 Proposed System
 
 🗃️3.1 Data-set Collection
+
 The dataset containing the soil specific attributes which are collected from Polytest Laboratories
 soil testing lab, Pune, Maharashtra, India. In addition, similar sources of general crop data were
 also used from Marathwada University. The crops considered in our model include groundnut,
@@ -206,17 +214,21 @@ be the class label of the new sample.
 
 
 🧠.3 Algorithms (Learning models)
+
 Machine Learning Algorithm: Different machine learning algorithms are being used in order to
 make comparisons.
 The different algorithms used are as follows:
 📌 Logistic Regression
+
 Logistic regression is a process of modeling the probability of a discrete outcome given an input
 variable. The most common logistic regression models a binary outcome; something that can take two
 values such as true/false, yes/no, and so on. Multinomial logistic regression can model scenarios
 where there are more than two possible discrete outcomes. Logistic regression is a useful analysis
 method for classification problems, where you are trying to determine if a new sample fits best into a
 category.
+
 🌳 Decision Tree
+
 A decision tree is a non-parametric method of supervised learning technique. Throughout the
 process a tree like structure is formed. In this, the dataset is broken down to build upon the
 tree subsequently. Finally, the resulting output is a tree like structure with both decision nodes
@@ -224,7 +236,9 @@ and leaf nodes. Decision nodes can either have two or more branches while the le
 indicate the final nodes representing classification or regression result. The topmost node is the
 root node and the one with higher gain (or Gini index) value is taken to be the root. Decision
 trees have the ability to classify both categorical and numerical data.
+
 🎯 Naive Bayes
+
 This classifier has features that are statically independent to one another. Most of the other
 classifiers predict some amount of correlation between the features but Naive Bayes models
 its different features as independent features given its class. This implements a restriction on
@@ -232,7 +246,9 @@ the given data, but in practice naive bayes have more sophisticated techniques t
 enjoy some theoretical support for improving its efficiency. Naive Bayes classifiers can take
 different high dimensional features with very less number of training data and they are also
 very highly scalable classifiers.
+
 ⚡ XGBoost
+
 XGBoost is one of the most popular machine learning algorithm these days. Regardless of the type
 of prediction task at hand, regression or classification. XGBoost is well known to provide better
 solutions than other machine learning algorithms. In fact, since its inception, it has become the "state-
@@ -248,6 +264,7 @@ parameters for cross-validation, regularization, user-defined objective function
 parameters, scikit-learn compatible API etc.
 
 📈 Support Vector Machine (SVM)
+
 An SVM that is Support Vector Machine is an example of a supervised machine learning
 model which has many learning algorithms that analyzes the data that is used for solving both
 classification and regression problems. We are given some training samples where each sample
@@ -257,6 +274,7 @@ categories. An SVM represents many examples that are taken as dots in space such
 samples belonging to different groups are partitioned with a gap between them.
 
 🌲 Random Forest
+
 A random forest is a supervised machine learning algorithm that is constructed from decision tree
 algorithms. A random forest is a machine learning technique that’s used to solve regression and
 classification problems. It utilizes ensemble learning, which is a technique that combines many
@@ -276,6 +294,7 @@ packages (like scikit-learn).
 
 
 💻3.4 Software and Hardware Requirements
+
  Software Requirements
 
 🐍Python
@@ -289,10 +308,12 @@ scale projects.
 Visual Studio Code is a source-code editor made by Microsoft for Windows, Linux and macOS.
 Features include support for debugging, syntax highlighting, intelligent code completion, snippets,
 code refactoring, and embedded Git.
+
 Anaconda
 Anaconda is a distribution of the Python and R programming languages for scientific computing, that
 aims to simplify package management and deployment. The distribution includes data-science
 packages suitable for Windows, Linux, and macOS.
+
 Jupyter Notebook
 The Jupiter Notebook is an open-source web application that allows you to create and share documents
 that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and
@@ -317,7 +338,6 @@ Python 3.9 and associated applications:-
  4 GB RAM
 5 GB free disk space
 
-13
 
 3.5 Frameworks Required
 
@@ -361,6 +381,7 @@ based design templates for typography, forms, buttons, navigation, and other int
 components.
 
 3.6 ☁️Hosting Service
+
  Cloud Platform (Heroku)
 Heroku is a cloud platform as a service (PaaS) supporting several programming languages. One of the
 first cloud platforms, Heroku has been in development since June 2007, when it supported only
@@ -370,17 +391,21 @@ build, run and scale applications in a similar manner across most languages.
 Applications that are run on Heroku typically have a unique domain used to route HTTP requests to
 the correct application container or dyno. Each of the dynos are spread across a "dyno grid" which
 consists of several servers. Heroku's Git server handles application repository pushes from permitted
-users. All Heroku services are hosted on Amazon's EC2 cloud-computing platform.
+users.
+All Heroku services are hosted on Amazon's EC2 cloud-computing platform.
  Running Apps in Heroku
+
 1. Start your app locally
 To locally start all of the process types that are defined in your Procfile:heroku local
 heroku local web
 You can now test the app locally. Press Ctrl+C to shut it down when you are done.
 
 Here are some of the command line options:
+
 To use a different Procfile, use the -f flag: heroku local -f Procfile.test.
 To use a different environment file, use the -e flag: heroku local -e .env.test. to use a different port,
 use the -p flag: heroku local -p 7000. If you don’t specify a port, 5000 is used.
+
 2. Set up your local environment variables
 When running your app, you will typically use a set of config vars to capture the configuration of the
 app. For example: say your app uses S3 for image storage. You would want to store the credentials to
@@ -389,15 +414,18 @@ than if you were running it in production. The .env file lets you capture all th
 need in order to run your app locally. When you start your app using any of the heroku local
 commands, the .env file is read, and each name/value pair is inserted into the environment, to mimic
 the action of config vars.
-3. Copy Heroku config vars to your local .env file
+
+4. Copy Heroku config vars to your local .env file
 Sometimes you may want to use the same config var in both local and Heroku environments. For each
 config var that you want to add to your .env file, use the following command:
 heroku config:get CONFIG-VAR-NAME -s >> .envDo
-4. Run your app locally using Foreman
+
+6. Run your app locally using Foreman
 As an alternative to using Heroku Local, you can still use Foreman to run your app locally. It’s not
 officially supported but if you want to use it, you can get more information by visiting the Foreman
 GitHub repository.Foreman is a command-line tool for running Procfile-backed apps.
-5. Start your app locally
+
+8. Start your app locally
 foreman start
 If you had a Procfile with both web and worker process types, Foreman will start one of each process
 type, with the output interleaved on your terminal. Your web process loads on port 5000 because this
